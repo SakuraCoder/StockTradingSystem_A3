@@ -4,27 +4,169 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>企业网站模板</title>
   <link rel="stylesheet" href="../assets/css/amazeui.css" />
+  <link rel="stylesheet" href="../assets/css/common.min.css" />
   <link rel="stylesheet" href="../assets/css/other.min.css" />
 </head>
-<body class="login-container">
-  <div class="login-box">
-    <div class="logo-img">
-      <img src="../assets/images/logo2_03.png" alt="" />
+<body class="register-container">
+<div class="layout">
+  <!--===========layout-header================-->
+  <div class="layout-header am-hide-sm-only">
+    <!--topbar start-->
+    <div class="topbar">
+      <div class="container">
+        <div class="am-g">
+          <div class="am-u-md-3">
+            <div class="topbar-left">
+              <i class="am-icon-globe"></i>
+              <div class="am-dropdown" data-am-dropdown>
+              </div>
+            </div>
+          </div>
+          <div class="am-u-md-9">
+            <div class="topbar-right am-text-right am-fr">
+              <a href="../html/login.html">登录</a>
+              <a href="../html/register.html">注册</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <form action="" class="am-form" data-am-validator>
-      <div class="am-form-group">
-        <label for="doc-vld-name-2"><i class="am-icon-user"></i></label>
-        <input type="text" id="doc-vld-name-2" minlength="3" placeholder="输入用户名（至少 3 个字符）" required/>
+    <!--topbar end-->
+    <!--nav start-->
+    <div class="nav-contain">
+      <div class="nav-inner">
+        <ul class="am-nav am-nav-pills am-nav-justify">
+          <li class=""><a href="../index.html">首页</a></li>
+          <li>
+            <a href="#">股票交易</a>
+            <!-- sub-menu start-->
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="../html/product1.html">股票买入</a></li>
+              <li class="menu-item"><a href="../html/product2.html">股票卖出</a></li>
+            </ul>
+            <!-- sub-menu end-->
+          </li>
+          <li>
+            <a href="#">账号查询</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="../html/zijinzhanghu.html">资金账户</a></li>
+              <li class="menu-item"><a href="../html/zhenquanzhanghu.html">证券账户</a></li>
+            </ul>
+          </li>
+          <li><a href="../html/solution.html">股票查询</a></li>
+          <li><a href="../html/about.html">关于我们</a></li>
+        </ul>
       </div>
-
-      <div class="am-form-group">
-        <label for="doc-vld-email-2"><i class="am-icon-key"></i></label>
-        <input type="email" id="doc-vld-email-2" placeholder="输入邮箱" required/>
-      </div>
-      <button class="am-btn am-btn-secondary"  type="submit">登录</button>
-    </form>
+    </div>
+    <!--nav end-->
   </div>
+  <!--mobile header start-->
+  <div class="m-header">
+    <div class="am-g am-show-sm-only">
+      <div class="am-u-sm-2">
+        <div class="menu-bars">
+          <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}"><i class="am-menu-toggle-icon am-icon-bars"></i></a>
+          <!-- 侧边栏内容 -->
+          <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas >
+            <a href="javascript: void(0)" class="am-menu-toggle"></a>
+
+            <div class="am-offcanvas" >
+              <div class="am-offcanvas-bar">
+                <ul class="am-menu-nav am-avg-sm-1">
+                  <li><a href="./index.html" class="" >首页</a></li>
+                  <li class="am-parent">
+                    <a href="#" class="" >股票交易</a>
+                    <ul class="am-menu-sub am-collapse ">
+                      <li class="">
+                        <a href="html/product1.html" class="" >股票买入</a>
+                      </li>
+                      <li class="">
+                        <a href="html/product2.html" class="" >股票卖出</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="#" class="" >账号查询</a>
+                    <ul class="am-menu-sub am-collapse ">
+                      <li class="">
+                        <a href="html/product1.html" class="" >资金账户</a>
+                      </li>
+                      <li class="">
+                        <a href="html/product2.html" class="" >证券账户</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class=""><a href="html/solution.html" class="" >股票查询</a></li>
+                  <li class=""><a href="html/about.html" class="" >关于我们</a></li>
+                  <li class=""><a href="html/login.html" class="" >登录</a></li>
+                  <li class=""><a href="html/register.html" class="" >注册</a></li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+      <div class="am-u-sm-5 am-u-end">
+        <div class="m-logo">
+          <a href=""><img src="assets/images/logo.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!--mobile header end-->
+  </div>
+
+  <!--===========layout-container================-->
+
+  <div class="register-box">
+    <form action="" class="am-form" id="doc-vld-msg">
+      <fieldset>
+        <div class="am-text-xxl am-text-center" style="font-weight: bold">证券账户登录 <p/> <p/> <hr></div>
+
+        <div class="am-form-group">
+          <div class="am-g">
+            <div class="am-u-md-2 am-padding-0 am-text-right">
+              <label for="login-id-1" class="login-id">用户名:</label>
+            </div>
+            <div class="am-u-md-10">
+              <input type="text" id="login-id-1" minlength="5"
+                     placeholder="请输入用户名" data-validation-message="*用户名至少要有5个字符" required/>
+            </div>
+          </div>
+        </div>
+
+        <div class="am-form-group">
+          <div class="am-g">
+            <div class="am-u-md-2 am-padding-0 am-text-right">
+              <label for="login-pwd-1" class="login-pwd">密码:</label>
+            </div>
+            <div class="am-u-md-10">
+              <input type="password" id="login-pwd-1" placeholder="请输入密码" minlength="6" data-validation-message="*密码需要大于6位" required/>
+            </div>
+          </div>
+        </div>
+
+        <div class="am-g">
+          <div class="am-u-md-10 am-text-center">
+            <button class="am-btn am-btn-secondary am-text-lg" type="submit" style="font-weight: bolder">登&nbsp&nbsp&nbsp录</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+
+</div>
+
+
+
+
+<script src="../assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+<script src="../assets/js/amazeui.js" charset="utf-8"></script>
+<script src="../assets/js/register.js" charset="utf-8"></script>
 </body>
+
 </html>
