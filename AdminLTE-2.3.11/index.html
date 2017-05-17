@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>股票在线交易系统</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/mycss.css">
+
+  <!-- jQuery 2.2.3 -->
+  <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+  <!-- Bootstrap 3.3.6 -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- SlimScroll -->
+  <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="plugins/fastclick/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/app.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+
+  
+  <script src="dist/js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+  <script src="dist/js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+  <!--Include flickerplate-->
+  <link href="dist/css/flickerplate.css"  type="text/css" rel="stylesheet">
+  <script src="dist/js/flickerplate.min.js" type="text/javascript"></script>
+  <!--Execute flickerplate-->
+  <script>
+  $(document).ready(function(){
+    $('.flicker-example').flicker();
+  });
+  </script>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav" style = "margin-bottom: 0px">
+<div class="wrapper" >
+
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index2.html" class="navbar-brand"><b>Admin</b>LTE</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页 </a></li>
+            <li><a href="#">股票市场 </a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- User Account Menu -->
+            <li class="dropdown user user-menu">
+              <!-- Menu Toggle Button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- The user image in the menu -->
+                <li class="user-header">
+                  <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Alexander Pierce - Web Developer
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="row">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </div>
+                  <!-- /.row -->
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+          <li><a href="pages/login.html">登录</a></li>
+          <li><a href="pages/register.html">开户</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Full Width Column -->
+  <div class="flicker-example" data-block-text="false" style = "max-height:600px">
+          <ul "style = width:100%; height:100%">
+            <li data-background="dist/img/slide1.jpg" style = "background-size:100% 100%; background-repeat:no-repeat">
+              <div class="flick-title" style = "font-size:4.5rem">
+                  浙理，有最实时的股市行情资讯
+              </div>
+              <div class="flick-sub-text" style = "font-size:3rem">real-time stock information</div>
+              
+            </li>
+            <li data-background="dist/img/slide2.jpg" style = "background-size:100% 100%; background-repeat:no-repeat">
+              <div class="flick-title" style = "font-size:4.5rem">浙理，有最可靠的股票投资分析</div>
+              <div class="flick-sub-text"style = "font-size:3rem">reliable investment analysis</div>
+            </li>
+            <li data-background="dist/img/slide3.jpg" style = "background-size:100% 100%; background-repeat:no-repeat">
+              <div class="flick-title" style = "font-size:4.5rem">浙理，有最便捷的交易管理系统</div>
+              <div class="flick-sub-text" style = "font-size:3rem">efficient trading management</div>
+            </li>
+            <li data-background="dist/img/slide4.jpg" style = "background-size:100% 100%; background-repeat:no-repeat">
+              <div class="flick-title" style = "font-size:4.5rem">在浙理，做财富的主人</div>
+              <!-- <div class="flick-sub-text" style = "font-size:3rem">be the master of wealth</div> -->
+              <button type="button" class="btn btn-block btn-primary btn-lg" style = "font-size:2.5rem; width:20%; margin-left:40%; margin-top:5%">Get Started</button>
+            </li>
+
+
+
+          </ul>
+  </div>
+</div>
+<!-- ./wrapper -->
+
+
+</body>
+</html>
