@@ -45,6 +45,22 @@
   $(document).ready(function(){
     $('.flicker-example').flicker();
   });
+
+  window.onresize = function()
+  {
+      var obj = document.getElementById("mainp");
+      var h = document.documentElement.clientHeight - 51;
+      obj.style.setProperty('height', h.toString() + 'px', 'important');
+      //alert(obj.style.height);
+  }
+
+  window.onload = function()
+  {
+      var obj = document.getElementById("mainp");
+      var h = document.documentElement.clientHeight - 51;
+      obj.style.setProperty('height', h.toString() + 'px', 'important');
+      //alert(obj.style.height);
+  }
   </script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -134,7 +150,10 @@
     </nav>
   </header>
   <!-- Full Width Column -->
-  <div class="flicker-example" data-block-text="false" style = "max-height:600px">
+  <div class="flicker-example" id = "mainp" data-block-text="false">
+          <script type="text/javascript">
+
+          </script>
           <ul "style = width:100%; height:100%">
             <li data-background="dist/img/slide1.jpg" style = "background-size:100% 100%; background-repeat:no-repeat">
               <div class="flick-title" style = "font-size:4.5rem">
