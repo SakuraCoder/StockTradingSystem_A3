@@ -36,10 +36,10 @@ $().ready(function () {
             },
             password: {
                 required: true,
-                minlength: 5,
+                minlength: 6,
                 maxlength: 20
             },
-            rpassword: {
+            repassword: {
                 equalTo: "#password1"
             },
             email: {
@@ -93,7 +93,7 @@ $().ready(function () {
                 minlength: jQuery.validator.format("*密码不能小于{0}个字符"),
                 maxlength: jQuery.validator.format("*密码不能大于{0}个字符")
             },
-            rpassword: {
+            repassword: {
                 equalTo: "*两次密码不一样"
             },
             email: {
