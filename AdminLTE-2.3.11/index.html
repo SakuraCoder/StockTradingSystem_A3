@@ -164,22 +164,22 @@
                                 <div><br></div>
                                 <div class="form-group col-md-12">
                                     <div class="col-md-3 no-padding text-right">
-                                        <label for="user-id" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">用户名:</label>
+                                        <label for="bond_id" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">用户名:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="user-id" name="user_id" placeholder="请输入用户名(至少5个字符)">
+                                        <input type="text" class="form-control input-lg" id="bond_id" name="user_id" placeholder="请输入用户名(至少5个字符)">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <div class="col-md-3 no-padding text-right">
-                                        <label for="card-id" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">账户类型:</label>
+                                        <label for="user-type" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">账户类型:</label>
                                     </div>
                                     <div id="user-type" class="col-md-9">
                                         <label class="radio-inline col-md-5 input-lg" style="color: rgba(153,153,153,1)" >
-                                            <input type="radio" id="user-type-1" name="optionsRadios" checked> 自然人
+                                            <input type="radio" id="user-type-1" name="optionsRadios" value="0" checked="checked"> 自然人
                                         </label>
                                         <label class="radio-inline col-md-5 input-lg" style="color: rgba(153,153,153,1)">
-                                            <input type="radio" id="user-type-2" name="optionsRadios"> 法人
+                                            <input type="radio" id="user-type-2" name="optionsRadios" value="1"> 法人
                                         </label>
                                     </div>
                                 </div>
@@ -201,23 +201,23 @@
                                 </div>
                                 <div class="form-group col-md-12">
                                     <div class="col-md-3 no-padding text-right">
-                                        <label for="card-id" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">身份证:</label>
+                                        <label for="id_card" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">身份证:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="card-id" name="idcard" placeholder="请输入身份证号">
+                                        <input type="text" class="form-control input-lg" id="id_card" name="idcard" placeholder="请输入身份证号">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <div class="col-md-3 no-padding text-right">
-                                        <label for="user-name" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">姓名:</label>
+                                        <label for="name" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">姓名:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="user-name" name="name" placeholder="请输入您的姓名">
+                                        <input type="text" class="form-control input-lg" id="name" name="name" placeholder="请输入您的姓名">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <div class="col-md-3 no-padding text-right">
-                                        <label for="card-id" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">性别:</label>
+                                        <label for="gender" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">性别:</label>
                                     </div>
                                     <div id="gender" class="col-md-9">
                                         <label class="radio-inline col-md-5 input-lg" style="color: rgba(153,153,153,1)" >
@@ -236,7 +236,7 @@
                                         <input type="number" class="form-control input-lg" id="phone" name="phone" placeholder="请输入手机号">
                                     </div>
                                 </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-12" id="email_div">
                                     <div class="col-md-3 no-padding text-right">
                                         <label for="email" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">邮箱:</label>
                                     </div>
@@ -244,7 +244,7 @@
                                         <input type="text" class="form-control input-lg" id="email" placeholder="请输入邮箱" title="邮箱正确格式：xxx@xxx.com">
                                     </div>
                                 </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-12" id="address_div">
                                     <div class="col-md-3 no-padding text-right">
                                         <label for="address" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">地址:</label>
                                     </div>
@@ -252,15 +252,15 @@
                                         <input type="text" class="form-control input-lg" id="address" name="address" placeholder="请输入您的地址">
                                     </div>
                                 </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-12" id="occupation_div">
                                     <div class="col-md-3 no-padding text-right">
                                         <label for="occupation" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">职业:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="occupation" placeholder="请输入您的职业">
+                                        <input type="text" class="form-control input-lg" id="occupation" name="occupation" placeholder="请输入您的职业">
                                     </div>
                                 </div>
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-12" id="education_div">
                                     <div class="col-md-3 no-padding text-right">
                                         <label for="education" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">教育水平:</label>
                                     </div>
@@ -283,7 +283,7 @@
                                         <label for="workplace" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">工作地点:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="workplace" placeholder="请输入工作地点">
+                                        <input type="text" class="form-control input-lg" id="workplace" name="workplace" placeholder="请输入工作地点">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12" id="business_license_div">
@@ -291,7 +291,7 @@
                                         <label for="business_license" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">营业执照:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="business_license" placeholder="请输入营业执照">
+                                        <input type="text" class="form-control input-lg" id="business_license" name="business_license" placeholder="请输入营业执照">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12" id="manager_name_div">
@@ -299,7 +299,7 @@
                                         <label for="manager_name" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">经理姓名:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="manager_name" placeholder="请输入公司经理姓名">
+                                        <input type="text" class="form-control input-lg" id="manager_name" name="manager_name" placeholder="请输入公司经理姓名">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12" id="manager_id_card_div">
@@ -307,7 +307,7 @@
                                         <label for="manager_id_card" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">经理身份证:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="manager_id_card" placeholder="请输入公司身份证号">
+                                        <input type="text" class="form-control input-lg" id="manager_id_card" name="manager_id_card" placeholder="请输入公司身份证号">
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12" id="manager_phone_div">
@@ -315,7 +315,7 @@
                                         <label for="manager_phone" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">经理电话:</label>
                                     </div>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control input-lg" id="manager_phone" placeholder="请输入公司经理联系电话">
+                                        <input type="text" class="form-control input-lg" id="manager_phone" name="manager_phone" placeholder="请输入公司经理联系电话">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -324,15 +324,37 @@
                             </form>
                         </div>
                         <div class="tab-pane" id="login-tab">
-                            <form action="" class="form col-md-offset-1 col-md-10">
+                            <form action="" class="form col-md-12" id="login_form">
                                 <div><br></div>
                                 <div><br></div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control input-lg" placeholder="请输入登陆邮件">
+                                <div><br></div>
+                                <div><br></div>
+                                <div class="form-group col-md-12">
+                                    <div class="col-md-3 no-padding text-right">
+                                        <label for="login_bond_id" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">用户名:</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control input-lg" id="login_bond_id" name="login_user_id" placeholder="请输入用户名(至少5个字符)">
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control input-lg" placeholder="请输入登录密码">
+                                <div><br></div>
+                                <div><br></div>
+                                <div><br></div>
+                                <div><br></div>
+                                <div><br></div>
+                                <div class="form-group col-md-12">
+                                    <div class="col-md-3 no-padding text-right">
+                                        <label for="login_password" class="login-pwd input-lg" style="color: rgba(153,153,153,1)">密码:</label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input id="login_password" type="password" name="login_password" class="form-control input-lg" placeholder="请输入登陆密码(至少6个字符)">
+                                    </div>
                                 </div>
+                                <div><br></div>
+                                <div><br></div>
+                                <div><br></div>
+                                <div><br></div>
+                                <div><br></div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-lg btn-block">立刻登录</button>
                                     <!--<span><a href="newforgot.html">忘记密码</a></span>-->
@@ -387,6 +409,6 @@
 <!-- ./wrapper -->
 
 <script src="dist/js/register.js" charset="utf-8"></script>
-
+<script src="dist/js/login.js" charset="utf-8"></script>
 </body>
 </html>
